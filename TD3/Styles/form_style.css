@@ -1,0 +1,207 @@
+form{
+	margin: 0 auto;
+	width : 80%;
+	padding : 1em;
+	border : 1px solid #CCCCCC;
+	text-align:center;
+}
+
+form div {
+	margin-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+}
+
+label {
+	font-family:verdana;
+	color:white;
+	font-weight:bold;
+	display:inline-block;
+	width:100px;
+	text-align: right;
+	padding:5px 20px;
+	background-color:Midnightblue;
+	border-radius:25px;
+}
+
+input, textarea {
+	font: 1em sans-serif;
+	width : 50%;
+	box-sizing:border-box;
+	border: 1px solid #999999;
+	margin-left:40px;
+}
+
+input:focus, textarea:focus{
+	border-color: #000000;
+}
+
+textarea {
+	vertical-align:top;
+	height:5em;
+}
+
+.formbutton{
+	background-color:#EEEEEE;
+	padding:20px;
+	border-radius: 25px;
+}
+
+button {
+	color: white;
+	font-weight:bold;
+	margin-left: .5em;
+	background-color: MidnightBlue;
+	padding: 8px 30px;
+	border-radius: 25px;
+}
+
+button:hover{
+	font-size:1.1em;
+	padding: 9px 32px;
+	background-color: DarkCyan;
+}
+
+.msg, .msg p {
+	font-size:1.1em;
+	text-align:center;
+}
+
+.successMessage{
+	background-color: green;
+}
+
+.errorMessage{
+	background-color: red;
+}
+
+.IDzone {
+	margin-top:10px;
+	padding : 0;
+	background-color: lightblue;
+	border : 1px solid midnightblue;
+	border-radius:10px;
+	overflow: auto;
+}
+
+.IDzone form{
+	margin: 0 auto;
+	width : 98%;
+	padding : 0;
+	text-align:center;
+	border:0;
+	overflow: auto;
+}
+
+#ID_name {
+	margin-top:0;
+	padding:0;
+	float:left;
+	font-weight:bold;
+	text-align:left;
+	width:50%;
+}
+
+#ID_name p {
+	color:#2a6477;
+	font-size:1.3em;
+	margin-top:14px;
+	margin-bottom:0px;
+	padding:0px;
+}
+
+#ID_myblog {
+	margin:0;
+	padding:0;
+}
+
+#ID_myblog p {
+	margin:0;
+	padding-top:18px;
+	font-size:0.8em;
+}
+
+#ID_logout {
+	margin-top:8px;
+	padding:0;
+	float:right;
+	width:30%;
+	text-align:right;
+}
+
+#ID_logout button {
+	color: white;
+	font-weight:bold;
+	margin-left: .5em;
+	background-color: #2a6477;
+	padding: 8px 30px;
+	border-radius: 25px;
+	font-size:0.9em;
+}
+
+#ID_logout button:hover {
+	color: white;
+	font-weight:bold;
+	margin-left: .5em;
+	background-color: #114050;
+	padding: 8px 30px;
+	border-radius: 25px;
+	font-size:0.9em;
+}
+
+.blogPost{
+	margin : 20px auto;
+	width:90%;
+	border: 4px double midnightblue;
+	border-radius:25px;
+}
+
+.postContent {
+	margin : 10px auto;
+	width:85%;
+}
+
+.postTitle{
+	background-color:darkblue;
+	border-radius: 22px 22px 0px 0px;
+	overflow: auto;
+}
+
+.postTitle h3 {
+	background-color: darkblue;
+	text-align: left;
+	font-size:1.5em;
+}
+
+.postTitle p {
+	margin: 0px 0px 10px 70px;
+	padding:0;
+	color:lightblue;
+	font-style: italic;
+}
+
+.postModify {
+	float:right;
+}
+
+.postModify form{
+	float:right;
+	margin:0px 30px 0 0;
+	padding:0px;
+	border:0;
+}
+
+.postModify form button{
+	margin:20px 0px 0px 0px;
+}
+
+.postAuthor {
+	float: right;
+	color:white;
+	font-size:1.4em;
+	font-weight:bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align:right;
+	margin: 20px 10px 0px 0px;
+}

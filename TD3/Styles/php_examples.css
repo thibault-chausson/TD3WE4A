@@ -1,0 +1,189 @@
+/* Body a aussi un style, malgré le fait qu'il inclue toute la fenêtre */
+body {
+	margin-top: 0;
+	margin-bottom:0;
+	background-color: lightblue;
+	padding: 0px 0px;
+}
+
+/* # permet de faire référence à un "ID" d'identification unique */
+#MainContainer {
+	margin: 0px auto;
+	width: 70%;
+	border-width: 0px 10px; 
+	border-style:double; 
+	border-color:MidnightBlue;
+	padding: 0px 10px;
+	background-color:white;
+}
+
+/* Les virgules permettent d'appliquer des propriétés à plusieurs éléments d'un coup
+Ici on applique des propriétés de style à tous les 'headers' (titres) de 1 à 6 */
+h1,h2,h3 {
+	font-family: verdana;
+	color:white;
+	text-align: center;
+}
+
+/* Si un élément apparaît plusieurs fois, les propriétés seront combinées.
+On se sert de ça pour rendre chaque header différent malgré leurs points communs*/
+h1 {
+	background-color:MidnightBlue;
+	border-radius: 25px;
+	padding: 10px 0px;
+}
+
+h2{
+	background-color:#1d207a;
+	border-radius: 22px;
+	padding: 9px 0px;
+}
+
+h3{
+	background-color:#243091;
+	border-radius: 19px;
+	padding: 8px 0px;
+	margin:0 50px;
+}
+
+/* Propriétés des paragraphes, s'appliquent à tous*/
+p {
+	color:#333333;
+	font-family: verdana;
+	font-size: 14px;
+	padding: 0px 2%;
+}
+
+p.date{
+	margin:20px 0;
+	padding:0px;
+	text-align:center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/* Propriétés pour les textes italiques*/
+i {
+	color:#777777;
+}
+
+/* Propriétés pour les textes gras*/
+b{
+	color:#000000;
+}
+
+/*Même chose pour la classe "goodluck"*/
+.goodluck{
+	font-size:30px;
+	font-weight:bold;
+}
+
+/* On peut combiner un tag et une classe ainsi : ces propriétés s'appliqueront
+aux images qui sont également de la classe "center" */
+img.center{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* Toutes les balises peuvent avoir des propriétés de style, même <hr>!
+En revanche, certaines propriétés ne fonctionnent pas sur certaines : <hr> n'a pas de texte, donc 
+les propriétés liées au texte y sont sans effet*/
+hr{
+	margin-top:40px;
+}
+
+/* On définit des propriétés pour deux classes en même temps en les séparant par des virgules*/
+.header, .footer{
+	background-color:#252544;
+	padding: 30px 0px;
+	margin: 0px -10px;
+}
+
+/* Lorsque deux éléments se suivent sans séparateur, cela signifie une hiérarchie:
+ici, nous attribuons des propriétés aux "<h1> qui sont à l'intérieur d'éléments de classe header"*/
+.header h1{
+	background-color:#252544;
+}
+
+/*On peut combiner des hiérarchies et une déclaration multiples pour être encore plus efficace!*/
+.header hr, .footer hr {
+	margin:10px 0px;
+	color:white;
+	height:3px;
+	background-color:white;
+}
+
+/*Autre hiérarchie : les <p> à l'intérieur d'éléments de classe "footer"*/
+.footer p {
+	font-family: verdana;
+	color:white;
+	text-align: center;
+	margin:0;
+}
+
+/*Les balises de lien <a> sont particulières car elles ont plusieurs états, qui ont chacun leur style*/
+/*link : état lorsque la destination du lien n'a pas été visitée*/
+a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	color:darkcyan;
+	text-decoration:none;
+}
+
+/*visited : état lorsque la destination du lien a déjà été visitée précédemment*/
+a:visited {
+	color:darkcyan;
+}
+
+/*hover : état lorsque la souris passe au dessus du lien*/
+a:hover{
+	color:MidnightBlue;
+}
+
+/*active : état lorsque l'utilisateur est en train de cliquer sur le lien*/
+a:active{
+	color:blue;
+}
+
+/*Annoncer les couleurs dabs un paragraphe gros et centré*/
+.couleur {
+	color:#666666;
+	text-align:center;
+	font-weight: bold;
+	font-size: 2em;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/*Style pour "warnings", des textes pour dire de faire attention*/
+.warning {
+	font-weight:bold;
+	color:darkred;
+}
+
+h3.warning{
+	color:white;
+	background-color:darkred;
+}
+
+/*Lien de fin de page sur exos PHP*/
+.endlink, .backlink{
+	font-size:1.5em;
+	text-align:right;
+	float:right;
+	height: 30px;
+}
+
+/*Lien de fin de page (retour) sur exos PHP*/
+.backlink{
+	font-size:1.5em;
+	text-align:left;
+	float:left;
+	height: 30px;
+}
